@@ -1,0 +1,44 @@
+homewokr JS 1
+
+1. En un archivo de texto separado que debes crear, delimitado siempre por comillas simples '', escribe explicaciones de los siguientes conceptos como si
+ se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier 
+ agujero en tu comprensión.
+
+	* Variables
+Son los elementos que utiliza java para identificar lo que el programador quiere decir o hacer, 
+por ejemplo tenemos los Strings que serian algo asi como palabras o texto, los Numeros que serian
+ numeros enteros sin coma, los reales que son numeros con coma o numeros con signo, los Booleanos que serian de logica de 
+ verdadero o falso, 1 o 0, si o no, etc. El tipo NULL que seria como vacio, 0, nada, etc. y por ultimo
+ el Undefined que es algo sin definir pero que puede tomar un valor a diferencia del NULL que ya en si
+ es un "valor"
+
+	* Strings
+Es un tipo de variable del tipo texto, puede ser usado para una palabra, un simbolo, un espacio, una oracion
+por ejemplo 'a' ' ' 'Ticiano' 'Hola, mi nombre es Ticiano' y que al sumarse se concatenan, lo qe significa
+que se empalman una con la otra, por ejemplo 'Ticiano' + ' ' + 'Mensegue' seria 'Ticiano Mensegue' y tambien
+si uno escribe un string de numeros como '1' si uno hace '1' + '1' daria '11' en vez de la suma de numeros 2
+	
+	* Funciones (argumentos, `return`)
+Las funciones sirven para evitar escribiendo codigo de manera repetitiva, y asi ahorrar tiempo y memoria para 
+no hacer un codigo tan largo y pesado, mismo tambien para que realice operaciones matematicas o logicas por uno
+pueden usarse para darle un valor a una variable como por ejemplo c = suma(a,b); donde uno haria la funcion
+var Suma(a,b){return a+b}; al usar la palabra return lo que significa es que luego de ejecutar las operacion o
+comandos escritos dentro de dicha funcion nos devolvera algo, en este caso el resultado de la suma, y este mismo
+se asignara a la variable c. en este caso la funcion suma suele ser parte del repositorio de funciones que tienen
+la mayoria de las aplicacions para programar, pero uno puede inventar sus propias funciones, funciones que devuelvan
+un numero, un string, un booleando de verdadero o falso, etc. o pueden no devolver nada, si uno solo necesita que
+la funcion haga algo como darle valor a una variable, y esa variable aunque uno no le haya puesto return a la funcion
+de todos modos tomara el valor, 
+
+	* Declaraciones `if`
+	son operaciones condicionales que se usan al momento de programar, por ejemplo para decir si esto pasa entonces
+	hace o deja de hacer algo, de lo contrario (else) hacer otra cosa, y asi, se pueden encadenar varios if y asi
+	sucesivamente, es una herramienta muy util para hacer funciones y para programar. 
+
+
+	* Valores booleanos (`true`, `false`)
+	Son valores logicos, que estan reservados por sistema, para determinar si una condicion se cumple o no,
+	como verdadero o falso, si dos variables son iguales, devuelvo el valor true, de lo contrario el valor false.
+	Ayudan a que uno escriba de manera mas prolija el codigo para que al momento de que cualquier otro programador
+	lea mi codigo sepa lo que yo quise hacer, yo podria decir qe si algo es igual devuelvo 1 y de lo contrario 0, 
+	pero por 

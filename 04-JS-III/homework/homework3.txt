@@ -1,0 +1,11 @@
+	* Arrays
+
+    son "listas" de elementos ordenados uno al lado del otro, que puede ser del mismo tipo o de distintos tipos, hasta puede haber un array adentro de otro o una funcion, ejemplo var array = [1, 'hola', true]
+
+    las funciones push y pop:
+    funcion push nos permite agregar un elemento al final del array
+    funcion pop saca el ultimo elemento y lo devuelve
+
+    las funciones unshift y shift:
+    unshift coloca el elemento al principio del array
+    shift saca el primer elemento y lo devuelve

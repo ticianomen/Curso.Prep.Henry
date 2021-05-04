@@ -1,0 +1,34 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Objetos:
+	Los objetos son colecciones de propiedades. sirven para crear un elemento que pueda poseer 
+	por ejemplo nombre, apellido, edad, etc y que esos sean como titulos que no cambien, como
+	podria pasar en un string cuando uno no recuerda en que posicion del string esta el nombre y en cual la edad
+	porque con un objeto digo objeto.nombre = “juan”, sin importar en que posicion del objeto nombre este
+
+
+	* Propiedades:
+	Serian como los elementos de un objeto. nombre, apellido , edad etc
+	var obj ={
+		propiedad1 = ‘juan’,
+		propiedad2 = ‘perez’,
+		propiedad3 = 33,
+	}
+
+		* Métodos:
+	es una funcion dentro de un objeto. por ejemplo objeto.funcion();
+	this se utiliza para invocar propiedades del objeto dentro del metodo
+	por ejemplo this.propiedad1
+
+
+	* Bucle `for…in`:
+	se utiliza para recorrer un bucle for hasta que se introduzca una condicion valida.
+	como para usuario y contraseña, al introducirlas correctamente se saldra del loop
+
+
+
+	* Notación de puntos vs notación de corchetes:
+	not notation reemplaza al corchete y las comillas , la ventaja es que resulta mas veloz para programar,
+	pero solo sirve para propiedades del objeto.
+
+    

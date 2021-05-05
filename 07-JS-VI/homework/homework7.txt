@@ -1,1 +1,52 @@
 * Funciones Callback
+
+es la capacidad de pasar una funcion como parametro a 
+otra funcion. suelen pasarse como cb. funcion hola(cb)
+
+por ejemplo
+
+function hola(persona){
+    return 'Hola ' + persona;
+}
+function chau(persona){
+    return 'Chau ' + persona;
+}
+
+function Saludo(usuario,cb){
+    return cb(usuario);
+}
+
+Saludo('Ticiano',hola);// 'Hola Ticiano'
+Saludo('Ticiano',chau);// 'Chau Ticiano'
+
+//////////////////
+Con arrays
+////////////////
+forEach() aplica una funcion a cada elemento de un array
+array.forEach(function callback(currentValue, index, array){fc}[.thisArg]);
+fc callback es la que se va a ejecutar en cada elemento
+curr es el elemento actual siendo procesado
+(opcional) index es el indice del elemento actual
+(opcional) array es el vector en el que forEach esta siendo aplicado
+(opcional) thisArg es el valor que se usara como this cuando se ejecute fc
+
+ej.
+alumnos.forEach(function(el, index){console.log(elemento);});
+
+///////////////
+MAP
+///////////////
+
+devuelve un arreglo nuevo con una funcion aplicada al array anterior en cada elemento
+
+var numbers = [1,2,3,4,5]
+var dobles = numbers.map(function(x){return x*2});// [2,4,6,8,10]
+
+///////////////
+reduce
+//////////////
+Ejecuta una funcion reductora sobre un array y devuelve 1 unico valor
+
+array1 = [1,2,3,4,5,6]
+var suma = array1.reduce(function(acumulador,elemento){ return acumulador+elemento;},0;)//este 0 es el valor en que arranca el acumulador
+//suma=21;

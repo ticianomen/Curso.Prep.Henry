@@ -1,0 +1,69 @@
+* `prototype`
+//.__proto__ me devuelve el prototipo del objeto
+Cada objeto que creamos en js tiene sus propias propiedades y ademas esta referenciado a un prototipo, donde se fija si esta la propiedad a la que uno hace referencia si no esta en el objeto, por ejemplo cuando usamos .lenght o .push, estos metodos se encuentran en el prototipo Array aunque no esten en nuestro objeto(prototype chain). Puedo tener su propia fc aunque tenga el mismo nombre en su prototipo, solo busca en el proto si no la encontro en el objeto. Cuando uso un constructor digo que los objetos creados con un constructor, este constructor pasa a ser su prototipo. Son como los metodos de los constructors. y van luego de las propiedades
+function Persona (nombre,apellido)={
+    nombre: 'Default';
+    apellido: 'Default';
+}
+Persona.prototype.getNombre = function()
+    {
+     return this.nombre + ' ' + this.apellido;
+    }
+}
+
+var juan = new Persona('Juan', 'Maquiavelo')
+// Podemos asignar el prototipo de juan a Persona para acceder a sus 
+juan.getNombre();
+
+Ota forma de crear
+//creo objeto
+var  Persona ={
+    nombre: 'Default',
+    apellido: 'Default',
+}
+var toni = Object.create(Persona);
+//crea un objeto nuevo cuyo prototipo es el original del cual lo copiamos
+
+/////////////////////////////////
+//New
+
+var obj ={}
+return Persona.(edad).bind(obj);
+obj.__proto__ = Persona.prototype;
+
+
+//////////////////////////////////
+
+
+
+* _Constructors_ (de Clases)
+
+es una funcion constructora, nos permite construir objetos, a diferencia de cuando uno define un objeto, con sus propiedades, crea una funcion de una forma parecida que tambien tendra sus propiedades.
+function Clase(){
+    this.nombre = "Juan";
+    this.apellido = "Perez";
+}
+entonces yo puedo definir a una persona de una manera mas sencilla
+var juan = new Clase();
+entonces yo hago console.log(juan); y esto me devuelve 
+Clase { nombre: 'Juan', apellido: 'Perez' }
+
+Operador OR ||
+Si a es true devuelve a
+si a es false devuelve b
+Tambien se puede crear un constructor que reciba valores y tenga otros "Por defecto"
+function Clase(nombre, apellido, alumno){
+    this.nombre = nombre || "Juan";
+    this.apellido = apellido || "Perez";
+    this.almuno = alumno || "Si";
+}
+
+var ticiano = new Clase('Ticiano','Mensegue');
+
+Y esto devolveria con un console.log(ticiano);
+Clase { nombre: 'Ticiano', apellido: 'Mensegue', alumno 'Si' }
+
+Operador AND &&
+Si a es true devuelve b
+Si a es false devuelve a
+//negar un objeto 2 veces devuelve el booleano del objeto !!'algo'=true
